@@ -1,0 +1,1177 @@
+body{
+	padding: 0;
+	font-family: 'Times', serif;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+@font-face{
+    font-family: SpectrumFont;
+    src: url(WeeklyFree-SemiBold.otf);
+}
+
+
+#wrapper{
+    margin-right: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+#headTitle{
+    font-family: SpectrumFont;
+    font-size: 36;
+    opacity: .55;
+    position: absolute;
+    left: 525px;
+    top: -5px;
+}
+
+#spectrumLogo{
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+#grayBar{
+    position: absolute;
+    left: 0;
+    top: -8;
+    z-index: -1;
+}
+
+
+#smallFloorPlanGannett{
+	width: 520px;
+	height: 320px;
+	cursor: pointer;
+	position: relative;
+	top: 35px;
+	left: 30px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	float: left;
+
+}
+
+#GannettHeader{
+	position: absolute;
+	left:225;
+	top: 200;
+	font-family: SpectrumFont;
+    font-size: 30;
+    opacity: .65;
+}
+
+#CummingsHeader{
+    position: absolute;
+    left:875;
+    top: 200;
+    font-family: SpectrumFont;
+    font-size: 30;
+    opacity: .65;
+}
+
+#openModal{
+	top: 250px;
+	position: absolute;
+	left: 50px;
+}
+
+#openModal2{
+    top: 250px;
+    position: absolute;
+    left: 700px;
+}
+
+
+figure{
+	display: inline;
+}
+
+figure:hover{
+	opacity: .6;
+} 
+
+
+figcaption{
+	margin: 375px 0px 0 0;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+
+
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 25%;
+}
+
+#largeMap{
+	width: 2000px;
+    min-width: 2000px;
+	height: 1300px;
+    margin-left: -50px;
+    position: relative;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-x: scroll;
+    overflow-y: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modalContent {
+    position: relative;
+    background-color: #fefefe;
+    margin: 2% auto; /*from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 95%; /* Could be more or less, depending on screen size */
+    min-width: 1800px;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.toolTipContainer{
+    z-index: 3;
+}
+
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 25%;
+}
+
+/*---------------------------------------PRINTERS + ATTRIBUTES-------------------------------------------*/
+
+
+
+/*-------------------------------------Printer SMG-5013----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+
+.printerSMG-5013{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5013:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+
+#greenLight{
+    position: absolute;
+}
+
+#GreenDot, #RedDot{
+    width: 10%;
+    height: auto;
+}
+
+.printerSMG-5013_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 43em;
+    top: 36.5em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5013_hover .InfoBoxSMG-5013 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5013_hover .InfoBoxSMG-5013::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5013_hover:hover .InfoBoxSMG-5013 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5013_hover:hover .printerSMG-5013{
+    width: 110%;
+    height: 110%;
+}
+
+.connectBtn{
+    position: relative;
+    cursor: pointer;
+    left: 18px;
+}
+
+/*-------------------------------------Printer SMG-5009----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5009{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5009:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5009_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 20em;
+    top: 36em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5009_hover .InfoBoxSMG-5009 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+
+.printerSMG-5009_hover .InfoBoxSMG-5009::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5009_hover:hover .InfoBoxSMG-5009 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5009_hover:hover .printerSMG-5009 {
+    width: 110%;
+    height: 110%;
+}
+
+/*-------------------------------------Printer SMG-5011----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5011{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5011:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5011_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 18.5em;
+    top: 33.5em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5011_hover .InfoBoxSMG-5011 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5011_hover .InfoBoxSMG-5011::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5011_hover:hover .InfoBoxSMG-5011 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5011_hover:hover .printerSMG-5011 {
+    width: 110%;
+    height: 110%;
+}
+
+/*-------------------------------------Printer SMG-5016----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5016{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5016:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5016_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 43em;
+    top: 15em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5016_hover .InfoBoxSMG-5016 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5016_hover .InfoBoxSMG-5016::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5016_hover:hover .InfoBoxSMG-5016 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5016_hover:hover .printerSMG-5016 {
+    width: 110%;
+    height: 110%;
+}
+
+/*-------------------------------------Printer SMG-5010----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5010{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5010:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5010_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 45em;
+    top: 15em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5010_hover .InfoBoxSMG-5010 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5010_hover .InfoBoxSMG-5010::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5010_hover:hover .InfoBoxSMG-5010 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5010_hover:hover .printerSMG-5010 {
+    width: 110%;
+    height: 110%;
+}
+
+
+/*-------------------------------------Printer SMG-5012----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5012{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5012:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5012_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 76.5em;
+    top: 31em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5012_hover .InfoBoxSMG-5012 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5012_hover .InfoBoxSMG-5012::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5012_hover:hover  .InfoBoxSMG-5012 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.printerSMG-5012_hover:hover .printerSMG-5012 {
+    width: 110%;
+    height: 110%;
+}
+
+/*-------------------------------------Printer SMG-5005----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5005{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5005:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5005_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 78em;
+    top: 28.5em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5005_hover .InfoBoxSMG-5005 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5005_hover .InfoBoxSMG-5005::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5005_hover:hover .InfoBoxSMG-5005 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5005_hover:hover .printerSMG-5005 {
+    width: 110%;
+    height: 110%;
+}
+
+
+/*-------------------------------------Printer SMG-5001----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5001{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5001:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5001_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 85em;
+    top: 39em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5001_hover .InfoBoxSMG-5001 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5001_hover .InfoBoxSMG-5001::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5001_hover:hover .InfoBoxSMG-5001 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5001_hover:hover .printerSMG-5001 {
+    width: 110%;
+    height: 110%;
+}
+
+
+/*-------------------------------------Printer SMG-5004----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5004{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5004:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5004_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 93em;
+    top: 64em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5004_hover .InfoBoxSMG-5004 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5004_hover .InfoBoxSMG-5004::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5004_hover:hover .InfoBoxSMG-5004 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5004_hover:hover .printerSMG-5004 {
+    width: 110%;
+    height: 110%;
+}
+
+
+/*-------------------------------------Printer SMG-5014----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5014{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5014:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5014_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 79em;
+    top: 39em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5014_hover .InfoBoxSMG-5014 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5014_hover .InfoBoxSMG-5014::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5014_hover:hover .InfoBoxSMG-5014 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5014_hover:hover .printerSMG-5014 {
+    width: 110%;
+    height: 110%;
+}
+
+/*-------------------------------------Printer SMG-5008----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5008{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5008:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5008_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 105em;
+    top: 53em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5008_hover .InfoBoxSMG-5008 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5008_hover .InfoBoxSMG-5008::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5008_hover:hover .InfoBoxSMG-5008 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5008_hover:hover .printerSMG-5008 {
+    width: 110%;
+    height: 110%;
+}
+
+/*-------------------------------------Printer SMG-5007----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5007{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5007:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5007_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 99em;
+    top: 50em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5007_hover .InfoBoxSMG-5007 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5007_hover .InfoBoxSMG-5007::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5007_hover:hover .InfoBoxSMG-5007 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5007_hover:hover .printerSMG-5007 {
+    width: 110%;
+    height: 110%;
+}
+
+/*-------------------------------------Printer SMG-5015----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.printerSMG-5015{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.printerSMG-5015:hover{
+    width: 110%;
+    height: 110% ;
+}
+
+.printerSMG-5015_hover{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    left: 87em;
+    top: 68em;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+.printerSMG-5015_hover .InfoBoxSMG-5015 {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 8px;
+    position: absolute;
+    z-index: 3;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    cursor: text;
+}
+
+
+.printerSMG-5015_hover .InfoBoxSMG-5015::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+.printerSMG-5015_hover:hover .InfoBoxSMG-5015 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.printerSMG-5015_hover:hover .printerSMG-5015 {
+    width: 110%;
+    height: 110%;
+}
+/*------------------------------END OF PRINTERS----------------------------------------------------------
+------------------------------------------------------------------------------------------------------*/
+
+
+
+td{
+    color: white;
+}
+
+
+
+
+
